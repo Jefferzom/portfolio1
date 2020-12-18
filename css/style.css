@@ -1,0 +1,1267 @@
+* *:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Proza Libre, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+/*hero + botoes*/
+
+#hero {
+  background: linear-gradient(270deg, #29292900 0%, black 80%) 50% 50% no-repeat
+      padding-box,
+    url('../img/outherHero.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 980px;
+  margin: 0 auto;
+}
+
+section nav img {
+  cursor: pointer;
+  padding-top: 8px;
+}
+
+.social {
+  display: flex;
+}
+
+section div h2 {
+  text-shadow: 0px 0px 10px #292929;
+  text-align: left;
+  font: normal normal normal 54px/81px Proza Libre;
+  letter-spacing: 5.03px;
+  color: #ffcc00;
+  text-shadow: 0px 0px 10px #292929;
+}
+section div h1.unico {
+  text-shadow: 0px 0px 10px var(--black);
+  text-align: left;
+  font: normal normal normal 81px/81px Proza Libre;
+  letter-spacing: 6.25px;
+  color: #ffcc00;
+  text-shadow: 0px 0px 10px #292929;
+}
+
+section div.call {
+  padding-top: 121px !important;
+}
+
+section div.butoes {
+  padding-left: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section div button.whatsapp {
+  cursor: pointer;
+  text-align: center;
+  width: 380px;
+  margin-top: 8px;
+  padding: 10px;
+  background-color: #ffcc00;
+  border-radius: 8px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  border: 2px solid #ffcc00;
+}
+
+section div button.ifood {
+  cursor: pointer;
+  text-align: center;
+  width: 380px;
+  margin-top: 8px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 8px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+}
+
+section div button.ifood:hover {
+  opacity: 0.5;
+}
+
+section div button.whatsapp:hover {
+  background: #c69e00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+}
+
+/* Sessão da Copy */
+
+section.copy {
+  max-height: 269px;
+  background: #fffcf2;
+}
+
+section div.copy2 {
+  max-height: 269px;
+  display: flex;
+  background: #fffcf2;
+}
+
+section div.spacebtw {
+  padding-top: 35px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+section div.spaceSolo {
+  width: 245px;
+}
+
+section div.spacebtw p {
+  padding-top: 16px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+section div.spacebtw small {
+  font: normal normal normal 12px/18px Open Sans;
+  letter-spacing: 0.55px;
+  color: #292929;
+  padding-bottom: 32px;
+}
+
+section.mapa-container {
+  background: #e0e0e0;
+  max-height: 650px;
+}
+
+#map {
+  z-index: 1;
+  height: 650px;
+  box-shadow: 0px 1px 0px #292929;
+}
+
+#cartao {
+  width: 544px;
+  border: 16px solid #fffcf2;
+  background-color: #fffcf2;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+}
+
+div .container-cartao {
+  margin-left: 200px;
+  padding-top: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+#cartao div.descricao p {
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+#cartao div.descricao small {
+  font: normal normal normal 11px/17px Open Sans;
+  letter-spacing: 0.5px;
+  color: #292929;
+}
+
+#cartao div.descricao h1 {
+  padding-top: 35px;
+}
+
+div.descricao {
+  max-width: 300px;
+}
+
+div.cartao {
+  display: flex;
+  flex-direction: row;
+}
+
+div.descricao h1 {
+  text-align: left;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+section.footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #292929;
+}
+
+section div.footer2 {
+  margin: auto;
+  padding-left: 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+section div.footer2 img {
+  padding-bottom: 14px;
+}
+
+section p.designed {
+  padding-top: 13px;
+  padding-right: 15px;
+  font: normal normal normal 10px/18px Open Sans;
+  letter-spacing: 0.45px;
+  color: #ffffff;
+}
+
+/*Escala Celular*/
+
+@media (max-width: 414px) {
+  #hero {
+    max-height: 980px;
+    background-image: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  nav.navrei {
+    width: 414px;
+    display: flex;
+    justify-content: center;
+  }
+  nav img.logorei {
+    margin-left: 5px !important;
+  }
+
+  ul.social {
+    margin-right: 35px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .call div h2 {
+    max-width: 400px;
+    font: normal normal normal 38px/82px Proza Libre;
+    letter-spacing: 0.3px !important;
+    margin-left: 15px;
+  }
+
+  .call div h1 {
+    font: normal normal normal 62px/36px Proza Libre !important;
+    letter-spacing: 0.5 !important;
+    padding-right: 6px !important;
+  }
+
+  .call2 {
+    left: -10px;
+    width: 450px !important;
+  }
+
+  .butoes button {
+    width: 490px;
+    font: normal normal bold 10px/18px Open Sans !important;
+  }
+
+  div.butoes {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    z-index: 9998;
+    width: 490px;
+    padding-left: 0px !important;
+  }
+
+  button.whatsapp {
+    /* width: 200px !important;
+    height: 72px; */
+    text-align: center;
+    font: normal normal bold 16px/24px Open Sans;
+    letter-spacing: 0.73px;
+    color: #292929;
+    margin: 0px 8px 0px 0px !important;
+  }
+
+  button.ifood {
+    margin: 0px 0px 0px 0px !important;
+    /* width: 200px !important;
+    height: 72px; */
+    text-align: center;
+    font: normal normal bold 16px/24px Open Sans;
+    letter-spacing: 0.73px;
+    color: #292929;
+  }
+
+  #cartao {
+    position: absolute;
+    bottom: -750px !important;
+  }
+
+  section div.copy2 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .container-letsgo h1 {
+    text-align: center;
+    font: normal normal normal 24px/18px Proza Libre !important;
+    letter-spacing: 1.09px;
+    color: #292929;
+  }
+
+  h2.subtitle {
+    font: normal normal normal 16px/24px Open Sans !important;
+  }
+
+  div.container-letsgo h2 {
+    font: normal normal normal 20px/16px Proza Libre !important;
+    letter-spacing: 0.2px !important;
+  }
+
+  div.container-nome {
+    margin-right: 70px;
+  }
+  div.container-endereco {
+    margin-right: 70px;
+  }
+
+  .container-titulo h1 {
+    font: normal normal normal 24px/18px Proza Libre !important;
+  }
+
+  .box-segundoTitulo h1 {
+    font: normal normal normal 24px/18px Proza Libre !important;
+  }
+
+  .menu {
+    left: -65px;
+  }
+
+  .container-board h1 {
+    font: normal normal normal 28px/18px Proza Libre !important;
+  }
+
+  .container-pagamentos {
+    display: block !important;
+  }
+
+  p.dinheiro {
+    margin-right: 199px !important;
+  }
+  p.cartao {
+    margin-left: 220px !important;
+  }
+
+  .obs-pedido textarea {
+    width: 360px !important;
+  }
+
+  .container-negacao h1 {
+    font: normal normal normal 24px/24px Proza Libre !important;
+    letter-spacing: 1.09px;
+  }
+
+  .container-negacao small {
+    font: normal normal light 12px/18px Open Sans !important;
+    text-align: center;
+    letter-spacing: 0.55px;
+  }
+
+  .negar {
+    width: 390px !important;
+  }
+
+  div.container-cartao {
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  #map iframe {
+    width: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  #map iframe {
+    max-width: 1200px;
+  }
+
+  div.descricao {
+    padding-left: 10px;
+  }
+
+  div h1.unico {
+    letter-spacing: 1px !important;
+  }
+
+  div.call {
+    top: 20%;
+  }
+  div div.butoes {
+    max-width: 800px;
+    padding-right: 110px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section div button.whatsapp {
+    max-width: 400px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  section div button.ifood {
+    max-width: 400px;
+    padding: 24px;
+  }
+
+  section div h2 {
+    letter-spacing: 0;
+  }
+
+  #cartao img.fachada {
+    margin-left: 10px !important;
+  }
+
+  #cartao {
+    width: 280px !important;
+    height: 470px !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*Escala Tablet*/
+@media (max-width: 768px) {
+  #cartao img.fachada {
+    background-image: url('../img/Foto\ Fachada.png');
+  }
+  .void1 {
+    z-index: 1;
+    height: 160px;
+    background-color: #e0e0e0;
+  }
+
+  div.container-cartao {
+    bottom: -70%;
+  }
+
+  #cartao {
+    width: 550px;
+    height: 230px;
+  }
+  section div.mapis {
+    height: 100%;
+  }
+
+  section nav ul li img.icons {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  div img.fachada {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  section nav.navrei {
+    max-width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .void1 {
+    height: 160px;
+    background-color: #e0e0e0;
+  }
+
+  #hero {
+    background: linear-gradient(180deg, #29292900 0%, black 85%) 50% 50%
+        no-repeat padding-box,
+      url('../img/outherHero.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  div.call h2 {
+    max-width: 600px;
+    margin: none;
+  }
+  div.container-cartao {
+    position: absolute;
+    margin-left: 0;
+    padding-top: 0;
+    bottom: -40%;
+  }
+}
+
+@media (max-width: 991px) {
+  #map iframe {
+    max-width: 800px;
+  }
+}
+
+/* Response Modal */
+@media (max-width: 576px) {
+  div.container-endereco input {
+    width: 400px !important;
+    height: 38px;
+  }
+  div.container-letsgo h2 {
+    font: normal normal normal 24px/16px Proza Libre !important;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (max-width: 768px) {
+  div.container-endereco input {
+    width: 504px;
+    height: 38px;
+  }
+  div.container-letsgo h2 {
+    font: normal normal normal 24px/8px Proza Libre;
+    letter-spacing: 0.2px;
+  }
+}
+
+/* Estilizando a Janela Modal */
+
+.modal {
+  width: 1366px;
+  height: 485px;
+  border: 2px solid #292929;
+  border-radius: 6px;
+  background-color: #fffcf2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+}
+
+div a.backpage {
+  padding-top: 1px !important;
+}
+
+div.modal h1 {
+  text-align: center;
+  font: normal normal normal 54px/18px Proza Libre;
+  letter-spacing: 2.45px;
+  color: #292929;
+}
+
+div.modal h2 {
+  text-align: center;
+  font: normal normal normal 36px/18px Proza Libre;
+  letter-spacing: 1.64px;
+  color: #292929;
+  padding: 45px 0;
+}
+
+#formulario {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-nome {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-endereco {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-nome label {
+  text-align: left;
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.container-nome input {
+  width: 298px;
+  height: 38px;
+  text-align: left;
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  border: 0;
+  border-bottom: 0.5px solid black;
+}
+.container-endereco label {
+  text-align: left;
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.container-endereco input {
+  width: 708px;
+  height: 38px;
+  text-align: left;
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  border: 0;
+  border-bottom: 0.5px solid black;
+}
+
+div.container-btn {
+  padding-top: 32px !important;
+}
+
+div.container-btn button {
+  width: 298px;
+  height: 54px;
+  background: #ffcc00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+  color: black;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+div.container-btn button:hover {
+  background: #c69e00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+}
+
+/* Estilizando Modal Cardápio */
+
+div.cardapio {
+  padding-top: 750px;
+  position: absolute;
+  width: 100%;
+  height: 3100px;
+  border: 2px solid #292929;
+  border-radius: 6px;
+  background-color: #fffcf2;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+}
+
+div.container-dados {
+  display: flex;
+  justify-content: center;
+}
+
+div.container-titulo a img {
+  padding-top: 25px;
+  width: 20px;
+  height: 80px;
+}
+
+div.container-titulo h1 {
+  padding-bottom: 25px;
+  padding-top: 50px;
+  text-align: left;
+  font: normal normal normal 38px/18px Proza Libre;
+  letter-spacing: 2.45px;
+  color: #292929;
+}
+
+.container-titulo a img {
+  margin-top: 5px;
+}
+
+div.box-endereco {
+  background: #fffcf2 0% 0% no-repeat padding-box;
+  border: 2px solid #292929;
+  border-radius: 6px;
+}
+
+.box-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.box-info {
+  padding-top: 10px;
+  /* text-align: left; */
+}
+
+.box-info p {
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.box-info a {
+  text-decoration: underline;
+  font: normal normal bold 12px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  padding-top: 22.5px;
+}
+
+/* div.change a {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  top: -40px !important;
+} */
+
+.box-segundoTitulo h1 {
+  padding-top: 20px;
+  text-align: left;
+  font: normal normal normal 54px/18px Proza Libre;
+  letter-spacing: 2.45px;
+  color: #292929;
+}
+
+div.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.box-burguers h2 {
+  padding: 30px 0;
+}
+
+div.burguers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.container-burguer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 298px;
+  height: 506px;
+  background: #fffcf2 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 6px;
+}
+
+div.container-burguer1 img {
+  height: 194px;
+  width: 194px;
+  padding-bottom: 24px;
+}
+
+div.container-burguer1 h3 {
+  text-align: center;
+  font: normal normal bold 24px/29px Proza Libre;
+  letter-spacing: 1.09px;
+  color: #292929;
+}
+
+div p.valor {
+  text-align: center;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.container-burguer1 small {
+  text-align: center;
+  font: normal normal normal 12px/18px Open Sans;
+  letter-spacing: 0.55px;
+  color: #292929;
+}
+
+div p.quantidade {
+  text-align: center;
+  font: normal normal bold 12px/24px Open Sans;
+  letter-spacing: 0.55px;
+  color: #292929;
+  outline-color: black;
+}
+
+div p.quantidade:hover {
+  color: crimson;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+div.container-burguer1 button {
+  outline: 0;
+  border: 0;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #ffcc00;
+  width: 194px;
+  height: 54px;
+  background: #292929 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+}
+
+div.combos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.container-burguerLast img {
+  height: 194px;
+  width: 194px;
+  padding-bottom: 24px;
+}
+
+div.container-burguerLast h3 {
+  text-align: center;
+  font: normal normal bold 24px/29px Proza Libre;
+  letter-spacing: 1.09px;
+  color: #292929;
+}
+
+div.container-burguerLast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 206px;
+  width: 298px;
+  background: #fffcf2 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 6px;
+}
+
+div.container-burguerLast button {
+  outline: 0;
+  border: 0;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #ffcc00;
+  width: 194px;
+  height: 54px;
+  background: #292929 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+}
+
+.container-burguerLast small {
+  text-align: center;
+  font: normal normal normal 12px/18px Open Sans;
+  letter-spacing: 0.55px;
+  color: #292929;
+}
+
+.btn-carrinho button {
+  outline: 0;
+  border: 0;
+  width: 358px;
+  height: 54px;
+  background: #ffcc00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+  text-align: center;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.btn-carrinho button:hover {
+  background: #c69e00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+}
+
+/* Response modal cardápio  */
+
+/* Escála Tablet */
+
+@media (max-width: 900px) {
+  div.container-burguerLast {
+    display: none;
+  }
+  div.change {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .container-titulo h1 {
+    padding-bottom: 25px;
+    padding-top: 40px;
+    text-align: left;
+    font: normal normal normal 34px/18px Proza Libre;
+    letter-spacing: 0.4px !important;
+    color: #292929;
+  }
+
+  .box-info p {
+    font: normal normal bold 10px/16px Open Sans !important;
+    letter-spacing: 0.4px !important;
+    color: #292929;
+    line-height: 25px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  div.container-burguerLast {
+    display: none;
+  }
+  .box-info p {
+    font: normal normal bold 16px/24px Open Sans !important;
+  }
+
+  .box-info a {
+    font: normal normal bold 18px/24px Open Sans !important;
+    padding-bottom: 12px;
+  }
+
+  .box-segundoTitulo h1 {
+    padding-top: 20px;
+    text-align: left;
+    font: normal normal normal 34px/18px Proza Libre;
+    letter-spacing: 0.4px;
+    color: #292929;
+  }
+}
+
+@media (max-width: 576px) {
+  .box-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-info p {
+    font: normal normal bold 16px/24px Open Sans !important;
+  }
+
+  .box-info a {
+    font: normal normal bold 18px/24px Open Sans !important;
+    padding-bottom: 12px;
+  }
+
+  .box-segundoTitulo h1 {
+    padding-top: 20px;
+    text-align: left;
+    font: normal normal normal 34px/18px Proza Libre;
+    letter-spacing: 0.4px;
+    color: #292929;
+  }
+
+  div.btn-carrinho {
+    top: -1%;
+  }
+
+  div.menu {
+    margin: 0;
+  }
+
+  div.container-burguer1 h3 {
+    letter-spacing: 0.5px !important;
+    font: normal normal bold 16px/24px Proza Libre !important;
+  }
+
+  .container-burguer1 button,
+  .container-burguerLast button {
+    margin-top: 55px;
+  }
+}
+
+/* Estilizando Modal Board */
+div.board {
+  display: none;
+  position: absolute;
+  width: 1366px;
+  height: 1327px;
+  border: 2px solid #292929;
+  border-radius: 6px;
+  background-color: #fffcf2;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.box-container {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-board h1 {
+  display: flex;
+  justify-content: center;
+  font: normal normal normal 54px/18px Proza Libre;
+  letter-spacing: 2.45px;
+  color: #292929;
+  padding-bottom: 38px;
+}
+
+.container-titulo {
+  padding-bottom: 32px;
+}
+
+.container-titulo h2 {
+  text-align: left;
+  font: normal normal normal 36px/18px Proza Libre;
+  letter-spacing: 1.64px;
+  color: #292929;
+}
+
+.container-pagamentos {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-pagamentos p {
+  padding-top: 15px;
+  padding-right: 16px;
+  font: normal normal normal 24px/24px Proza Libre;
+  letter-spacing: 1.09px;
+  color: #292929;
+}
+
+img.money {
+  padding-right: 64px;
+}
+
+img.trocar {
+  cursor: pointer;
+  padding-right: 64px;
+}
+
+img.credit {
+  padding-right: 16px;
+}
+
+.obs-pedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px !important;
+}
+
+.obs-pedido small {
+  padding-bottom: 16px;
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.obs-pedido textarea {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #7f7f7f;
+  border-radius: 3px;
+  width: 626px;
+  height: 160px;
+}
+
+.conclusao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 462px;
+  height: 46px;
+}
+
+.conclusao p {
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.checkbox {
+  padding-top: 8px !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+div .checkbox-input {
+  border: 3px solid #292929;
+  border-radius: 2px;
+}
+
+div.checkbox small {
+  padding-left: 8px !important;
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+}
+
+.conclusao-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.conclusao-btn button {
+  width: 298px;
+  height: 54px;
+  background: #ffcc00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  border: 0;
+  outline: 0;
+}
+
+.conclusao-btn button:hover {
+  background: #c69e00 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+}
+
+.conclusao-btn p {
+  cursor: pointer;
+  padding-top: 8px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #ff7373;
+}
+
+/* Response board */
+
+/* Mobile */
+
+@media (max-width: 375px) {
+  div.container-cartao {
+    padding-bottom: 145px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-board h1 {
+    padding-top: 5px;
+    font: normal normal normal 36px/18px Proza Libre;
+    letter-spacing: 1px;
+    color: #292929;
+    padding-bottom: 38px;
+  }
+  .container-pagamentos {
+    margin-left: 12px !important;
+    margin: 0 auto;
+  }
+  .obs-pedido textarea {
+    width: 426px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 679px) {
+  .obs-pedido textarea {
+    width: 426px;
+    height: 160px;
+  }
+}
+
+/* Modal Rejeitar */
+
+.negar {
+  position: fixed;
+  width: 522px;
+  height: 312px;
+  border: 2px solid #292929;
+  border-radius: 6px;
+  background-color: #fffcf2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+}
+
+div.container-negacao {
+  width: 522px;
+  height: 312px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-negacao h1 {
+  font: normal normal normal 32px/24px Proza Libre;
+  letter-spacing: 1.64px;
+  color: #292929;
+  padding-bottom: 8px;
+}
+
+.container-negacao small {
+  font: normal normal normal 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  padding-bottom: 32px;
+}
+
+button.voltar {
+  width: 298px;
+  height: 54px;
+  text-align: center;
+  box-shadow: 0px 3px 5px #00000029;
+  border: 2px solid #292929;
+  border-radius: 6px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #292929;
+  outline: 0;
+}
+
+button.btn-cancelar {
+  background: #292929 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #00000029;
+  border-radius: 6px;
+  font: normal normal bold 16px/24px Open Sans;
+  letter-spacing: 0.73px;
+  color: #ffcc00;
+  width: 298px;
+  height: 54px;
+  margin-top: 8px;
+  border: 0;
+  outline: 0;
+}
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px +,
+  md: 768px +,
+  lg: 992px +,
+  xl: 1200px +,
+  xxl: 1400px ++
+); */

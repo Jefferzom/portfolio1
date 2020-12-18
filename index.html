@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Proza+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rei do Hamburguer</title>
+</head>
+
+<body>
+
+
+  <section id="hero" class="container-xxl justify-content-md-center">
+    <nav class="navbar navrei m-auto col-sm-10 col-xs-10 col-12">
+      <img class="px-4 logorei" src="img/Logo Rei do HambúrguerV.png" alt="">
+      <ul class="social px-5">
+        <li class="px-5"><img class="icons" src="img/Icon facebook.svg" alt=""></li>
+        <li><img class="icons" src="img/Icon instagram.svg" alt=""></li>
+      </ul>
+    </nav>
+
+    <div class="call m-auto mt-sm-5 col-12 col-sm-12 col-md-10 mb-xs-5 col-xs-10">
+      <div class="col-sm-12  col-md-12 call2 col-xl-8">
+        <h2>QUEM DISSE QUE</h2>
+        <h1 class="unico">FELICIDADE</h1>
+        <h2>NÃO SE COMPRA?</h2>
+        <div class="butoes col-sm-12 col-12">
+          <button onclick="action()" type="button" class="btn whatsapp" href="">PEÇA PELO WHATSAPP</button>
+          <button type="button" class=" ifood" href="">PEÇA PELO IFOOD</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Dados -->
+
+  <div class="modal col-12 col-lg-10  text-center">
+
+    <div class="container-setas pt-5 col-12 d-flex justify-content-between" tabindex="9999">
+      <a class="backpage" href=""><img src="img/Icon back page.svg" alt="Voltar"></a>
+      <a href=""><img class="iconClose" src="img/Icon Close.svg" alt="Fechar"></a>
+    </div>
+
+    <div class="container-letsgo">
+      <h1>Vamos lá!</h1>
+      <h2 class="subtitle">Só precisamos de alguns dados seus.</h2>
+    </div>
+
+    <form-group class="container-fluid col-lg-10" id="formulario">
+
+      <div class="container-nome mb-3 col-lg-10 ml-5">
+        <label for="">Nome de quem receberá o pedido:</label>
+        <input class="name" type="text" name="" placeholder="Ex. João da Silva" id="">
+      </div>
+
+      <div class="container-endereco col-lg-10 ml-5">
+        <label for="">Endereço para entrega:</label>
+        <input class="address" type="text" name="" placeholder="Ex. Rua da Alegria, 22" id="">
+      </div>
+
+      <div class="container-btn col-12">
+        <button onclick="save()" class="ml-3 save" type="button">SALVAR ENDEREÇO</button>
+      </div>
+
+    </form-group>
+  </div>
+
+
+  <!-- Fim Modal Dados -->
+
+
+
+  <!-- Modal Cardápio -->
+
+  <div class="cardapio container-xxl mt-5 col-lg-12  col-12 justify-content-center">
+
+    <div class="container-dados pt-5">
+
+      <div class="container-titulo mt-xl-5 col-10 d-flex justify-content-between">
+        <h1>Endereço de entrega</h1>
+        <a href=""><img src="img/Icon Close.svg" alt=""></a>
+      </div>
+
+    </div>
+
+    <div class="box-endereco  col-9 m-auto">
+      <div class="box-info">
+        <p class="destino-pessoa">Entrega para: João<br>
+          Rua da Alegria, 22 - Austin - Nova Iguaçu, CEP 2608000</p>
+        <a href="">Alterar dados</a>
+      </div>
+      <div class="change">
+
+      </div>
+    </div>
+
+    <div class="box-segundoTitulo pt-2 col-10 m-auto">
+      <h1>O que vai comer hoje?</h1>
+    </div>
+
+    <div class="box-burguers pt-3 col-12 d-flex justify-content-center">
+      <h2>Burguers</h2>
+    </div>
+
+    <div class="menu col-12 col-xxl-12 col-xl-12">
+
+      <div class="burguers col-10">
+        <div class="container-burguer1">
+          <img src="img/Foto Produto.png" alt="Classic Cheddar">
+          <h3>Classic Cheddar</h3>
+          <p class="valor">R$ 18,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">1 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguer1">
+          <img src="img/Foto Produto-1.png" alt="Cheese Salad">
+          <h3>Cheese Salad</h3>
+          <p class="valor">R$ 16,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguerLast">
+          <img src="img/Foto Produto-2.png" alt="Classic Cheddar">
+          <h3>Smash</h3>
+          <p class="valor">R$ 13,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-combo d-flex justify-content-center p-3 col-md-12">
+      <h2>Combos</h2>
+    </div>
+
+    <div class="menu col-sm-12 col-12 col-xxl-12 col-xl-12">
+      <div class="combos col-10">
+        <div class="container-burguer1">
+          <img src="img/Foto Produto.png" alt="Classic Cheddar">
+          <h3>Classic Cheddar</h3>
+          <p class="valor">R$ 18,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">1 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguer1">
+          <img src="img/Foto Produto-1.png" alt="Cheese Salad">
+          <h3>Cheese Salad</h3>
+          <p class="valor">R$ 16,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguerLast">
+          <img src="img/Foto Produto-2.png" alt="Classic Cheddar">
+          <h3>Smash</h3>
+          <p class="valor">R$ 13,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-combo d-flex justify-content-center p-3 col-md-12">
+      <h2>Bebidas</h2>
+    </div>
+
+    <div class="menu col-sm-12 col-12 col-xxl-12 col-xl-12">
+      <div class="combos col-10">
+        <div class="container-burguer1">
+          <img src="img/Foto Produto.png" alt="Classic Cheddar">
+          <h3>Classic Cheddar</h3>
+          <p class="valor">R$ 18,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">1 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguer1">
+          <img src="img/Foto Produto-1.png" alt="Cheese Salad">
+          <h3>Cheese Salad</h3>
+          <p class="valor">R$ 16,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguerLast">
+          <img src="img/Foto Produto-2.png" alt="Classic Cheddar">
+          <h3>Smash</h3>
+          <p class="valor">R$ 13,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="btn-carrinho p-5  col-12 d-flex justify-content-center">
+      <button onclick="board()" class="continue" type="button">CONTINUAR PARA O CARRINHO</button>
+    </div>
+  </div>
+
+  <!-- Fim Modal Cardápio -->
+
+
+
+
+
+  <!-- Modal Conclusão -->
+
+
+  <div class="board col-12 m-auto">
+    <div class="box-container col-12 justify-content-center">
+      <div class="container-board mt-xl-5 col-8 d-flex justify-content-between">
+        <a href=""><img class="iconBack" src="img/Icon back page.svg" alt="Voltar"></a>
+        <h1>Quase lá!</h1>
+        <a href=""><img class="iconcrouse" src="img/Icon Close.svg" alt="Fechar"></a>
+      </div>
+    </div>
+    <div class="container-titulo col-12 d-flex">
+      <h2>Seu carrinho</h2>
+    </div>
+    <div class="menu col-sm-12 col-12 col-xxl-12 col-xl-12">
+      <div class="combos col-10">
+        <div class="container-burguer1">
+          <img src="img/Foto Produto.png" alt="Classic Cheddar">
+          <h3>Classic Cheddar</h3>
+          <p class="valor">R$ 18,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">1 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguer1">
+          <img src="img/Foto Produto-1.png" alt="Cheese Salad">
+          <h3>Cheese Salad</h3>
+          <p class="valor">R$ 16,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+
+        <div class="container-burguerLast">
+          <img src="img/Foto Produto-2.png" alt="Classic Cheddar">
+          <h3>Smash</h3>
+          <p class="valor">R$ 13,00</p>
+          <small>Pão Australiano Selado na Chapa, Blend de 140g de Carne Suculenta, Cheddar, Cebola Caramelizada, Tiras de Bacon Crocante e Maionese da Casa</small>
+          <p class="quantidade">0 no carrinho (REMOVER)</p>
+          <button type="button">ADICIONAR</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-pagamentos col-sm-12 p-4 col-12">
+      <p class="dinheiro">Dinheiro</p>
+      <img class="money" src="img/Icon dinheiro.svg" alt="Dinheiro">
+      <img onclick="mudar()" class="trocar" src="img/Icon switch.svg" alt="Trocar">
+      <img class="credit" src="img/Icon credito.svg" alt="Cartão de Crédito">
+      <p class="cartao">Cartão</p>
+    </div>
+
+    <div class="obs-pedido col-12 m-auto">
+      <small>Alguma observação sobre os itens do seu pedido?</small>
+      <textarea m-auto placeholder="Ex. Quero o Classic sem salada e os dois Smash sem o bacon." name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div class="conclusao d-flex justify-content-center m-auto col-12">
+      <p>Depois de concluir, seu WhatsApp abrirá com o pedido preenchido, é só enviar e te confirmaremos em seguida.</p>
+    </div>
+    <div class="checkbox col-12">
+      <input class="checkbox-input" type="checkbox" borde="black">
+      <small>Legal, entendi!!</small>
+    </div>
+
+    <div class="conclusao-btn d-flex justify-content-center">
+      <button type="">CONCLUIR NO WHATSAPP</button>
+      <p onclick="esvaziar()">Esvaziar o carrinho</p>
+    </div>
+  </div>
+
+  <!-- Fim Modal Board -->
+
+  <!-- Modal Rejeitar -->
+
+  <section class="negar col-12">
+    <div class="container-negacao d-flex m-auto col-12  justify-content-center">
+      <h1>Quer cancelar o pedido ?</h1>
+      <small>Isso apagará tudo que você já preencheu, tem certeza?</small>
+      <button class="voltar" onclick="voltarCardapio()" type="button">QUERO VOLTAR DE ONDE PAREI</button>
+      <button onclick="voltarHome()" class="btn-cancelar" type="button">QUERO CANCELAR O PEDIDO</button>
+    </div>
+  </section>
+
+
+  <section class="container-xxl copy">
+    <div class="container-xl copy2">
+      <div class="col-4 spacebtw">
+        <img src="img/Ilustração Beneficio 1.svg" alt="">
+        <p>Mais saudável</p>
+        <small>Feito a mão com o equilíbrio</br> perfeito entre sabor e nutrição.</small>
+      </div>
+      <div class="col-4 spacebtw">
+        <img src="img/Ilustração Beneficio 2.svg" alt="">
+        <p>Mais gostoso</p>
+        <small>Preparado na hora com</br> ingredientes selecionados.</small>
+      </div>
+      <div class="col-4 spacebtw spaceSolo">
+        <img src="img/Ilustração do Benefício 3.svg" alt="">
+        <p>Mais feliz</p>
+        <small>Produzido com dedicação, pondo a</br> sua felicidade em primeiro lugar.</small>
+      </div>
+    </div>
+  </section>
+  <div class="void1">
+
+  </div>
+  <section class="container-xxl mapa-container">
+    <div class="row mapis">
+
+      <div id="map" class="col-8 col-lg-8 col-sm-12 col-xs-12  col-md-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.4709838052086!2d-43.45898538449054!3d-22.74789613794082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967a4e4375ba7%3A0xa14aacff44761e9e!2sAv.%20Gov.%20Roberto%20Silveira%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026089-230!5e0!3m2!1spt-BR!2sbr!4v1607400063176!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+
+      <div class="container-cartao  col-12">
+        <div id="cartao" class=" col-md-12 rounded">
+          <img class="fachada rounded mr-md-3" width="199px" height="201px" src="img/Foto Fachada@2x.png" alt="">
+          <div class="descricao">
+            <h1>Rei do Hamburguer</h1>
+            <p>Av. Gov. Roberto Silveira, 540 - F2 - Centro, Nova Iguaçu - RJ, 26210-210</p>
+            <small>Aberto de sexta à domingo, das 14hrs às 23hrs</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  </div>
+
+  <section class="col-12 col-md-12 footer">
+    <div class="row col-12 m-auto footer2">
+      <p class="designed">Designed by</p>
+      <img class="" src="img/Logotipo.svg" alt="">
+    </div>
+  </section>
+
+
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+</body>
+
+</html>
